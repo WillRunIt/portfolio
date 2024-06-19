@@ -12,3 +12,6 @@ def about(request):
     return HttpResponse("<h2>Welcome to the About me page</h2>")
 def contact(request):
     return HttpResponse("<h2>Welcome to the Contact page</h2>")
+
+def experience(request):
+    return HttpResponse("<h2>Welcome to the Experience page</h2>")
