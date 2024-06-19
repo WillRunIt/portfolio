@@ -1,8 +1,12 @@
-<h1>Contact Me</h1>
-<form method="post">
-  {% csrf_token %}
-  {{ form }}
-  <div class="form-actions">
-    <button type="submit">Send</button>
-  </div>
-</form>
+<header>
+  <h1>Contact Me</h1>
+</header>
+<body>
+  <form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+  </form>
+</body>
