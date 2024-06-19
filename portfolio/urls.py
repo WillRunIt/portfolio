@@ -23,7 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('portfolio/', views.portfolio, name='portfolio'),
-    path('about_me', views.about, name='about'),
-    path('contact', views.contact, name='contact'),
-    path('experience', views.experience, name='experience')
+    path('about_me/', views.about, name='about'),
+    path('contact/', views.ContactView.as_view(), name='contact'),
+    path('experience/', views.experience, name='experience'),
+    path('success/', views.SuccessView.as_view(), name='success')
 ]
