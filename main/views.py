@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.conf import settings
 from django.core.mail import send_mail
 from django import forms
-from django.shortcuts import reverse
+from django.shortcuts import reverse, redirect
 from django.views.generic import TemplateView, FormView
 
 
@@ -54,7 +54,8 @@ def home(request):
     return HttpResponse("<h2>Welcome to the home page</h2>")
 
 def portfolio(request):
-    return HttpResponse("<h2>Welcome to my portfolio</h2>")
+    target_url = 'https://github.com/WillRunIt'
+    return redirect(target_url)
 
 def about(request):
     return HttpResponse("<h2>Welcome to the About me page</h2>")
