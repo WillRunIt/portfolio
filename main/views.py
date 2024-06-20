@@ -22,7 +22,7 @@ class ContactForm(forms.Form):
 class SuccessView(TemplateView):
     template_name = 'success.html'
 
-class ContactView(TemplateView):
+class ContactView(FormView):
     form_class = ContactForm
     template_name = 'contact.html'
 
