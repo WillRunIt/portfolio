@@ -1,13 +1,24 @@
-{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-  <a href ="{% url 'about' %}">About Me</a>
-  <a href ="{% url 'portfolio' %}">My Portfolio</a>
-  <a href ="{% url 'contact' %}">Contact Me</a>
-  <a href ="{% url 'experience' %}">My Experience</a>
+
+    <header class="header">
+        <a href="#" class="logo">logo</a>
+
+        <nav class="navbar">
+                <a href ="{% url 'home' %}">Home</a>
+                <a href ="{% url 'about' %}">About Me</a>
+                <a href ="{% url 'portfolio' %}">My Portfolio</a>
+                <a href ="{% url 'contact' %}">Contact Me</a>
+                <a href ="{% url 'experience' %}">My Experience</a>
+        </nav>
+    </header>
 </body>
 </html>
