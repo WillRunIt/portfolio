@@ -3,7 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
-    <link rel="stylesheet" href="css/style.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 
@@ -19,6 +20,8 @@
                 <a href ="{% url 'contact' %}">Contact Me</a>
                 <a href ="{% url 'experience' %}">My Experience</a>
         </nav>
+            {% block content %}
+            {% endblock %}
     </header>
 </body>
 </html>

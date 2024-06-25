@@ -126,3 +126,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 DEFAULT_FROM_EMAIL = "dekerpelwillem@hotmail.com"
 NOTIFY_EMAIL = "dekerpelwillem@hotmail.com"
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
