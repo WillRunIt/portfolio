@@ -123,8 +123,14 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-DEFAULT_FROM_EMAIL = "dekerpelwillem@hotmail.com"
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'tropixzzz@gmail.com'
+EMAIL_HOST_PASSWORD = 'jfgq hyyn rroq kxyg'
+
+DEFAULT_FROM_EMAIL = 'dekerpelwillem@hotmail.com'
 NOTIFY_EMAIL = "dekerpelwillem@hotmail.com"
 
 STATICFILES_DIRS = [
