@@ -11,17 +11,16 @@
 <body>
 
     <header class="header">
-        <a href="#" class="logo">logo</a>
-
         <nav class="navbar">
-                <a href ="{% url 'home' %}">Home</a>
-                <a href ="{% url 'about' %}">About Me</a>
-                <a href ="{% url 'portfolio' %}">My Portfolio</a>
-                <a href ="{% url 'contact' %}">Contact Me</a>
-                <a href ="{% url 'experience' %}">My Experience</a>
+                <a href ="{% url 'home' %}" class="nav_button">HOME</a>
+                <a href ="{% url 'about' %}" class="nav_button">ABOUT ME</a>
+                <a href ="{% url 'portfolio' %}" class="nav_button">MY PORTFOLIO</a>
+                <a href ="{% url 'contact' %}" class="nav_button">CONTACT ME</a>
+                <a href ="{% url 'experience' %}" class="nav_button">MY EXPERIENCE</a>
         </nav>
-            {% block content %}
-            {% endblock %}
+        <img class="logo" src="https://gcdnb.pbrd.co/images/xymZD67y7xmx.png?o=1" alt="Image not displayed">
+
     </header>
+
 </body>
 </html>
