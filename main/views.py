@@ -58,12 +58,7 @@ def portfolio(request):
     return redirect(target_url)
 
 def about(request):
-    return HttpResponse("<h2>Welcome to the About me page</h2>")
-def contact(request):
-    return HttpResponse("<h2>Welcome to the Contact page</h2>")
+    return render(request, 'about.html', None)
 
 def experience(request):
-    return HttpResponse("<h2>Welcome to the Experience page</h2>")
-
-def success(request):
-    return HttpResponse("<h2>Thank you for reaching out to me!</h2>")
+    return render(request, 'experience.html', None)

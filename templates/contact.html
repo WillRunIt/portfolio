@@ -1,12 +1,30 @@
 <header>
-  <h1>Contact Me</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 </header>
 <body>
-  <form method="post">
-    {% csrf_token %}
-    {{ form }}
-    <div class="form-actions">
-      <button type="submit">Send</button>
+    <header class="header">
+        <nav class="navbar">
+                <a href ="{% url 'home' %}" class="nav_button">HOME</a>
+                <a href ="{% url 'about' %}" class="nav_button">ABOUT ME</a>
+                <a href ="{% url 'portfolio' %}" class="nav_button">MY PORTFOLIO</a>
+                <a href ="{% url 'contact' %}" class="nav_button">CONTACT ME</a>
+                <a href ="{% url 'experience' %}" class="nav_button">MY EXPERIENCE</a>
+        </nav>
+        <img class="logo" src="https://gcdnb.pbrd.co/images/xymZD67y7xmx.png?o=1" alt="Image not displayed">
+
+    </header>
+    <div class="main_div">
+      <form method="post" class="main_form">
+      {% csrf_token %}
+      {{ form }}
+      <div class="form-actions">
+        <button type="submit" class="submit_button">Send</button>
+      </div>
+      </form>
     </div>
-  </form>
 </body>
