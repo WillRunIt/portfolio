@@ -1,8 +1,13 @@
+@font-face {
+  font-family: Fjalla;
+  src: url('../fonts/FjallaOne-Regular.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Calibri, sans-serif;
+    font-family: Fjalla, sans-serif;
 }
 
 body {
@@ -26,7 +31,6 @@ body {
 }
 
 .nav_button{
-    background: rgb(91,91,91);
     background: linear-gradient(312deg, rgba(91,91,91,1) 0%, rgba(0,0,0,1) 25%, rgba(3,3,3,1) 65%, rgba(94,94,94,1) 100%);
     border-style: solid;
     border-radius: 30px;
@@ -44,7 +48,6 @@ body {
 .nav_button:hover{
     color: black;
     border-color: #DFDFDF;
-    background: rgb(196,196,196);
     background: linear-gradient(312deg, rgba(196,196,196,1) 0%, rgba(245,245,245,1) 25%, rgba(245,245,245,1) 65%, rgba(196,196,196,1) 100%);
     box-shadow: 0 0 25px black;
     transform: translateY(-5px);
@@ -70,4 +73,124 @@ body {
 
 .main_div{
     padding-top: 100px;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(312deg, rgba(196,196,196,1) 0%, rgba(245,245,245,1) 25%, rgba(245,245,245,1) 65%, rgba(196,196,196,1) 100%);
+    border-radius: 10px;
+    padding: 40px 50px;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: Fjalla, sans-serif;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.custom-name-class{
+    width: 500px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 8px 6px -6px #555;
+}
+
+.custom-name-class:focus{
+    transition: 0.6s;
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-email-class {
+    width: 500px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 8px 6px -6px #555;
+}
+
+.custom-email-class:focus{
+    transition: 0.6s;
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-message-class {
+    width: 500px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 8px 6px -6px #555;
+}
+
+.custom-message-class:focus{
+    transition: 0.6s;
+    outline: none;
+    box-shadow: none;
+}
+
+.form_label{
+    width: 75px;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.form-actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_button{
+    background: linear-gradient(312deg, rgba(91,91,91,1) 0%, rgba(0,0,0,1) 25%, rgba(3,3,3,1) 65%, rgba(94,94,94,1) 100%);
+    border-style: solid;
+    border-radius: 20px;
+    color: whitesmoke;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    transition: 1.4s ease;
+}
+
+.submit_button:hover{
+    color: black;
+    border-color: #DFDFDF;
+    background: linear-gradient(312deg, rgba(196,196,196,1) 0%, rgba(245,245,245,1) 25%, rgba(245,245,245,1) 65%, rgba(196,196,196,1) 100%);
+    box-shadow: 0 0 25px black;
+}
+
+.submit_button:active{
+    transition: 0.4s ease;
+    border-color: #DFDFDF;
+    background-color: #DFDFDF;
+    box-shadow: 0 0 25px black;
 }

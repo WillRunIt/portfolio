@@ -1,3 +1,4 @@
+{% load custom_filters %}
 <header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,13 +19,24 @@
         <img class="logo" src="https://gcdnb.pbrd.co/images/xymZD67y7xmx.png?o=1" alt="Image not displayed">
 
     </header>
-    <div class="main_div">
-      <form method="post" class="main_form">
-      {% csrf_token %}
-      {{ form }}
-      <div class="form-actions">
-        <button type="submit" class="submit_button">Send</button>
-      </div>
-      </form>
+    <div class="form_div">
+        <form method="post" class="main_form">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="id_name" class="form_label">Name:</label>
+                {{ form.name|add_class:"custom-name-class" }}
+            </div>
+            <div class="form-group">
+                <label for="id_email" class="form_label">Email:</label>
+                {{ form.email|add_class:"custom-email-class" }}
+            </div>
+            <div class="form-group">
+                <label for="id_message" class="form_label">Message:</label>
+                {{ form.message|add_class:"custom-message-class" }}
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="submit_button">SEND</button>
+            </div>
+        </form>
     </div>
 </body>
