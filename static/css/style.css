@@ -71,10 +71,6 @@ body {
     padding: 0px 20px;
 }
 
-.main_div{
-    padding-top: 100px;
-}
-
 html, body{
     height: 100%;
     margin: 0;
@@ -193,4 +189,15 @@ textarea {
     border-color: #DFDFDF;
     background-color: #DFDFDF;
     box-shadow: 0 0 25px black;
+}
+
+.main_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    background: linear-gradient(312deg, rgba(196,196,196,1) 0%, rgba(245,245,245,1) 25%, rgba(245,245,245,1) 65%, rgba(196,196,196,1) 100%);
+    border-radius: 10px;
+    padding: 40px 50px;
 }
